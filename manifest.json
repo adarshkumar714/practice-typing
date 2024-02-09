@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Practice Typing",
+    "version": "1.0",
+    "description": "Now practice typing from extension.",
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "permissions": [
+      "activeTab"
+    ],
+    "content_scripts": [
+      {
+        "matches": [
+          "<all_urls>"
+        ],
+        "js": [
+          "content.js"
+        ]
+      }
+    ]
+  }
